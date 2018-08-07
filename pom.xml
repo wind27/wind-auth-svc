@@ -27,7 +27,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-
+		<jarTarget>target</jarTarget>
 
 		<dubbo-version>2.6.1</dubbo-version>
 		<dubbo-monitor-version>1.0-SNAPSHOT</dubbo-monitor-version>
@@ -94,6 +94,7 @@
 	</dependencies>
 
 	<build>
+		<directory>${jarTarget}</directory>
 		<defaultGoal>compile</defaultGoal>
 		<plugins>
 			<plugin>
@@ -102,8 +103,6 @@
 				<version>2.0.4.RELEASE</version>
 			</plugin>
 		</plugins>
-
-
 		<resources>
 			<resource>
 				<directory>src/main/resources</directory>
