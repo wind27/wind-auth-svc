@@ -7,7 +7,6 @@ import org.springframework.context.annotation.ImportResource;
 
 @SpringBootApplication
 @MapperScan("com.wind.auth.mapper")
-//@EnableDubboConfiguration
 @ImportResource(locations={"classpath:spring/applicationContext-*.xml"})
 public class Application {
 	public static void main(String[] args) {
