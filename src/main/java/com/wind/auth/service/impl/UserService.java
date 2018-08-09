@@ -1,10 +1,10 @@
 package com.wind.auth.service.impl;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.wind.auth.mapper.UserMapperEx;
 import com.wind.auth.model.User;
 import com.wind.auth.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Map;
@@ -14,8 +14,7 @@ import java.util.Map;
  *
  * @author qianchun 17/9/18
  **/
-@Service(version = "2.0.0")
-@org.springframework.stereotype.Service
+@Service
 public class UserService implements IUserService {
     @Autowired
     private UserMapperEx userMapper;
